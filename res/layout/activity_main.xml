@@ -1,23 +1,46 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+     >
 
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        >
+        
     <Button
         android:id="@+id/btn_open"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_margin="20dip"
         android:text="Open Wifi ADB" />
 
     <Button
         android:id="@+id/btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit" />
+    
+    <Button
+        android:id="@+id/btn_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Info" />
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/tv_info"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_open"
-        android:layout_margin="20dip"
-        android:text="Exit" />
+        android:textSize="24sp"
+        android:textColor="#0099EC"
+        android:hint="SHOW INFO HERE"
+        android:layout_weight="8"/>
 
-</RelativeLayout>
+</LinearLayout>

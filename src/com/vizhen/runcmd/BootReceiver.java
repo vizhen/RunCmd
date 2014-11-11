@@ -20,8 +20,6 @@ public class BootReceiver extends BroadcastReceiver
     {
         //开机自动打开调试功能
         Log.d("[RunCMD]BootReceiver", "BootReceiver!!");
-        
-        RunCmd.runOpenWifiAdb(context);
     }
     
 }
